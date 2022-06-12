@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+    --ask-navy: #242D40;
+    --ask-orange: #F16839;
+    --ask-gray: #F1F1F5;
+    --ask-gray2: #EFF1F6;
+    --ask-gray3: #DEE3ED;
+    --ask-white: #FFFFFF;
+    --ask-blue: #374562;
+    --ask-blueLight: #BEC7DA;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: var(--ask-gray2);
+}
+.nav {
+    padding-top: 3.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.nav__content .text {
+    color: var(--ask-orange);
+    font-weight: 700;
+    font-size: 0.90rem;
+}
+.time {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--ask-navy);
+}
+.time strong {
+    font-size: 1.8rem;
+}
+.time span {
+    font-weight: 200;
+}
+.home__section {
+    padding-top: 1.8rem;
+}
+.home__titles {
+    color: var(--ask-navy);
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.home__title {
+    text-align: left;
+    font-size: 1.5rem;
+}
+.home__title strong {
+    color: var(--ask-orange);
+}
+.content__section {
+    padding-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.video__container {
+    background-color: var(--ask-white);
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    max-width: 850px;
+}
+.video h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+}
+.coupon__container {
+    margin-top: 2rem;
+    border: 3px solid var(--ask-orange);
+    border-radius: 10px;
+    padding: 1.4rem 1.7rem;
+    width: 100%;
+    max-width: 850px;
+}
+.coupon__container p {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.coupon__container strong {
+    color: var(--ask-orange);
+}
+.coupon__container button {
+    background-color: var(--ask-orange);
+    color: var(--ask-white);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.70rem;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.training__days {
+    padding-top: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+}
+.training__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.2rem;
+    row-gap: 1.2rem;
+}
+.training__content strong {
+    color: var(--ask-orange);
+}
+.training__content img {
+    width: 100%;
+    /* max-width: 250px; */
+}
+.training__content h2 {
+    text-align: center;
+    background-color: var(--ask-blueLight);
+    border-radius: 5px 5px 0 0;
+    font-size: 1.2rem;
+    padding: 0.40rem;
+}
+.day {
+    background-color: var(--ask-white);
+    border-radius: 0 0 5px 5px;
+}
+.day__title {
+    font-size: 0.90rem;
+    padding: 1rem 0.50rem;
+}
+.day__description {
+    font-size: 0.80rem;
+    padding: 0 0.50rem;
+}
+.footer {
+    background-color: var(--ask-navy);
+}
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer__description {
+    color: var(--ask-white);
+    text-align: center;
+    font-size: 0.60rem;
+    padding: 1.4rem;
+}
+.copyrights__and__links {
+    display: flex;
+    flex-direction: column;
+    gap: .50rem;
+}
+.copyright, .trademark {
+    text-align: center;
+    color: var(--ask-white);
+    font-size: 0.65rem;
+}
+.link {
+    text-decoration: none;
+    color: var(--ask-white);
+    font-size: 0.60rem;
+}
+@media (min-width: 601px) {
+    .nav__content {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    .time {
+        gap: 1rem;
+    }
+}
+@media (min-width: 993px) {
+    .nav {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    main {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .video__container, .coupon__container {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .training__content {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1200px) {
+    .nav {
+        justify-content: space-around;
+    }
+}
